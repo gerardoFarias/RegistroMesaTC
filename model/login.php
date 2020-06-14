@@ -1,29 +1,48 @@
-<?php
+  <?php
 
- require '../config/db.php';
+session_start();
+  
+// Obtengo los datos cargados en el formulario de login.
+$email = $_POST['usuario'];
+$password = $_POST['password'];
 
-    class Localizacion extends DB {
+// Datos para conectar a la base de datos.
+$nombreServidor = "localhost";
+$nombreUsuario = "root";
+$passwordBaseDeDatos = "";
+$nombreBaseDeDatos = "techochile";
+
+// Crear conexión con la base de datos.
+$conn = new mysqli($nombreServidor, $nombreUsuario, $passwordBaseDeDatos, $nombreBaseDeDatos);
 
 
 
-function legeo(){
+
 
  $nombre= $_POST["usuario"];
- $pass= $_POST["pass"];
- $query= $this->connect()->prepare("SELECT nombres,pass FROM  techochile.tr_usuario WHERE nombres= '".$nombre."' and pass = '".$pass."'");
+ $pass= $_POST["password"];
+ $query=mysqli_query($conn,"SELECT * FROM  techochile.tr_usuario WHERE nombres='$nombre' AND pass='$pass'");
 
- $nr = mysqli_num_rows($query,connet());
-  if($nr == 1)
-  {
-      
-      header("location:../vistas/registroMesa.html");
- }
- else if($nr == 0) {
+ $result=mysqli_num_rows($query);
 
-   echo "falla de inicio";
 
+
+   
+
+    if($result > 0)
+
+    {
+
+            $data = mysqli_fetch_array($query);
+            header("location:../vistas/registroMesa.html");
+    
+        }
+else
+{
+    header("location:../vistas/index.html");
 }
-return $query;
-}
-}
+
+
+
+
 ?>
