@@ -1,0 +1,141 @@
+.footer
+{
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: #0092DF;
+}
+
+.header
+{
+    background: #0092DF;
+   
+}
+
+footer .social_icons li a {
+    width: 30px;
+    color: #fff;
+}
+.social_icons a {
+    display: block;
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 0px;
+    text-align: center;
+    color: #3b3b3b;
+}
+.social_icons li {
+    display: inline-block;
+    list-style: none;
+   
+}
+
+body
+{
+   background-image: url(https://www.techo.org/chile/wp-content/uploads/sites/6/2019/03/foto1_large.jpg);
+   /* background-repeat: no-repeat; */
+   background-size: cover;
+   position: relative;
+}
+
+.container-body2
+{
+   
+    background-image: url(https://www.tecnopymes.cl/wp-content/uploads/2020/05/techoparachile-wom.jpg);
+   
+    
+    background-size: cover;
+    position: relative;
+   
+
+}
+.container-body::before
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    opacity: 0.7;
+
+}
+.container-body .form
+{
+    position: relative;
+    z-index: 1;
+}
+
+.social_icons a:hover
+{
+    color: blue;
+}
+
+.mapa
+{
+    padding-top: 20px;
+}
+marquee
+{
+    color: blanchedalmond;
+}
+
+#footer
+{
+    padding-left: 100px;;
+}
+
+
+  .spinner-modal-lg .modal-dialog{
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    top: calc(50% - 24px);
+  }
+  
+  .spinner-modal-lg .modal-dialog .modal-content{
+    background-color: transparent;
+    border: none;
+  }
+
+   .alert-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:999;
+    background: #fff;
+    display: none;
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+}
+
+
+
+.marker {
+  background-image: url('../img/mapbox-icon.png');
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color:black
+}
+.mapboxgl-popup-content > h3{
+  font-size: 0.80rem;
+}
+ #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }

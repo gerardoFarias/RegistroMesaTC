@@ -1,0 +1,427 @@
+{
+	"info": {
+		"_postman_id": "bb373b8d-ee13-4ddd-be52-a62603b55071",
+		"name": "Techo-Chile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_USUARIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/techochile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techochile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_USUARIO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/techochile/?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"techochile",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_USUARIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombres\":\"dirigente\",\r\n    \"apellido_paterno\":\"dirigente\",\r\n    \"apellido_materno\":\"dirigente\",\r\n    \"email\":\"dirigente2@gmail.com\",\r\n    \"password\":\"1234567\",\r\n    \"estado\":1,\r\n    \"perfil_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/user.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_USUARIO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nombres\":\"dirigenteNuevo\",\r\n    \"apellido_paterno\":\"dirigenteNuevo\",\r\n    \"apellido_materno\":\"dirigenteNuevo\",\r\n    \"email\":\"dirigenteNuevo@gmail.com\",\r\n    \"password\":\"1234567\",\r\n    \"estado\":1,\r\n    \"perfil_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/user.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"user.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_USER",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nombres\":\"dirigenteNuevo\",\r\n    \"apellido_paterno\":\"dirigenteNuevo\",\r\n    \"apellido_materno\":\"dirigenteNuevo\",\r\n    \"email\":\"dirigenteNuevo@gmail.com\",\r\n    \"password\":\"1234567\",\r\n    \"estado\":1,\r\n    \"perfil_id\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/user.php?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"user.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_REGIONES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/regions.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"regions.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_PROVINCIAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/provincias.php?id=7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"provincias.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_COMUNAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/comunas.php?id=23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"comunas.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "23"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_OBTENERMESASDETRABAJO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_MESASTRABAJOBYCOMUNA",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php?idComuna=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					],
+					"query": [
+						{
+							"key": "idComuna",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_MESATRABAJO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Mesa 2\",\r\n    \"comunidad\":\"Comunidad 2\",\r\n    \"latitud\":\"-231231\",\r\n    \"longitud\":\"-123123\",\r\n    \"estado\":1,\r\n    \"comuna_id\":91\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT_MESADETRABAJO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": \"1\",\r\n        \"nombre\": \"nombre\",\r\n        \"comunidad\": \"comunidad\",\r\n        \"latitud\": \"latitud\",\r\n        \"longitud\": \"longitud\",\r\n        \"estado\": 0,\r\n        \"comuna_id\": 1\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE_MESATRABAJO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php?id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_IDREGIONTECHO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "f",
+							"value": "gms",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/Techo-chile/api/mesaTrabajo.php?idRegion=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Techo-chile",
+						"api",
+						"mesaTrabajo.php"
+					],
+					"query": [
+						{
+							"key": "idRegion",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API_TECHO_CHILE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "f",
+							"value": "gms",
+							"type": "text"
+						},
+						{
+							"key": "region",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://domain.chile.techo.org/api/v2/",
+					"protocol": "https",
+					"host": [
+						"domain",
+						"chile",
+						"techo",
+						"org"
+					],
+					"path": [
+						"api",
+						"v2",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
