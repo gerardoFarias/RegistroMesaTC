@@ -43,26 +43,24 @@
                <div class="modal-body bg-primary">
                   <!--         formulario ingreso modal
                      -->
+                     <form   action="../model/login.php"  method="POST" >
                   <div class="form-row">
-                     <div class="form-group col-12 text-light" id(formlg)>
-                        <label for="disabledSelect">Nombre</label>
-                        <input type="text" class="form-control" name="usuariolg" aria-describedby="emailHelp">
-                        <label for="disabledSelect">Contraseña</label>
-                        <input type="password" class="form-control" name="passlg"" aria-describedby="emailHelp">
+                     <div class="form-group col-12 text-light"  >
+                        <label>Nombre</label>
+                        <input type="text" class="form-control" name="usuario" >
+                        <label f>Contraseña</label>
+                        <input type="password" class="form-control" name="pass">
                      </div>
                   </div>
                </div>
                <div class="modal-footer bg-primary">
-                  <button type="button" href="http://www.localhost/Proyecto%20techo-chile/vista/registroMesa.html"
-                     class="btn btn-success btn-center" id="ingresar">INGRESAR</button>
+                  <button type="submit" class="btn btn-success btn-center" >INGRESAR</button>
                </div>
             </div>
          </div>
       </div>
-      <div class="container" style="
-          height: 100%;
-          display: inline;
-      ">
+   </form>
+      <div class="container" style=" height: 100%; display: inline;">
       
          <div class="container " id="formulario">
             <h4>MESA DE TRABAJO</h4>
@@ -80,12 +78,12 @@
             
 
                        <div class="form-group  text-light">
-                          <label for="disabledSelect">Region</label>
+                          <label for="disabledSelect">Seleccione una Region</label>
                           <select id="regiones" class="form-control">
                           </select>
                         <div class="overflow-auto" style="height: 300px;">
 
-                          <table class="table text text-light ">
+                          <table class="table text text-light bg-info " >
                              <thead>
                                 <tr>
                                    <th scope="col">Nombre</th>
